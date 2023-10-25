@@ -1,0 +1,73 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.navbar > h1 {
+    font-size: 30px;
+    margin: 0;
+    color: var(--heading_color);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar_links {
+    display: flex;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar_links > a {
+    display: inline-block;
+    align-items: left;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--body_color);
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+.navbar_links > a.active {
+    font-weight: 700;
+}
+
+.navbar_emoji {
+    width: 25px;
+    height: 25px;
+    margin-left: 7px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+
+    .navbar h1 {
+        font-size: 20px; /* Decrease font size */
+    }
+
+    .navbar_links > a {
+        font-size: 12px; /* Decrease font size */
+        padding: 0 5px; /* Adjust padding */
+    }
+
+    .navbar_links > a.active {
+        padding: 0 5px; /* Adjust padding */
+    }
+
+    .navbar_emoji {
+         /* Hide emoji for small screens */
+       display: none;
+    }
+
+    .DarkMode {
+        font-size: 15px; /* Decrease font size for dark mode button */
+        margin: 0 auto; /* Center the dark mode button */
+    }
+    p{
+        display: none;
+    }
+}
+  
